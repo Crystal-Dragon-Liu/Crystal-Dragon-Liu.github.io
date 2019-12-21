@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Lyb_blog</title>
+  <title>algorithm-practice（1）BreadthFirstSearch | Lyb_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Lyb_blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="算法练习——广度优先搜索（C++&#x2F;Python实现）Python实现12345678910111213141516171819202122232425262728293031from collections import deque#映射关系--图结构graph = &amp;#123;&amp;#125;graph[&amp;apos;me&amp;apos;] = [&amp;apos;alice&amp;apos;, &amp;apos;bob&amp;apos;, &amp;apos;claire&amp;apos;]#一度关系图结构graph[">
+<meta property="og:type" content="article">
+<meta property="og:title" content="algorithm-practice（1）BreadthFirstSearch">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;21&#x2F;algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch&#x2F;index.html">
 <meta property="og:site_name" content="Lyb_blog">
+<meta property="og:description" content="算法练习——广度优先搜索（C++&#x2F;Python实现）Python实现12345678910111213141516171819202122232425262728293031from collections import deque#映射关系--图结构graph = &amp;#123;&amp;#125;graph[&amp;apos;me&amp;apos;] = [&amp;apos;alice&amp;apos;, &amp;apos;bob&amp;apos;, &amp;apos;claire&amp;apos;]#一度关系图结构graph[">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-21T14:07:48.978Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Lyb_blog" type="application/atom+xml">
@@ -149,184 +152,161 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-algorithm-practice（1）BreadthFirstSearch" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      algorithm-practice（1）BreadthFirstSearch
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/" class="archive-article-date">
+
+        
+        <a href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/" class="archive-article-date">
   	<time datetime="2019-12-21T14:00:32.752Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/">algorithm-practice（1）BreadthFirstSearch</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="算法练习——广度优先搜索（C-Python实现）"><a href="#算法练习——广度优先搜索（C-Python实现）" class="headerlink" title="算法练习——广度优先搜索（C++/Python实现）"></a><center>算法练习——广度优先搜索（C++/Python实现）<center></center></center></h1><h2 id="Python实现"><a href="#Python实现" class="headerlink" title="Python实现"></a>Python实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="comment">#映射关系--图结构</span></span><br><span class="line">graph = &#123;&#125;</span><br><span class="line">graph[<span class="string">'me'</span>] = [<span class="string">'alice'</span>, <span class="string">'bob'</span>, <span class="string">'claire'</span>]</span><br><span class="line"><span class="comment">#一度关系图结构</span></span><br><span class="line">graph[<span class="string">'bob'</span>] = [<span class="string">'anuj'</span>, <span class="string">'peggy'</span>]</span><br><span class="line">graph[<span class="string">'claire'</span>] = [<span class="string">'thom'</span>, <span class="string">'jonny'</span>]</span><br><span class="line">graph[<span class="string">'alice'</span>] = [<span class="string">'peggy'</span>]</span><br><span class="line"><span class="comment">#二度关系</span></span><br><span class="line">graph[<span class="string">'anuj'</span>] = []</span><br><span class="line">graph[<span class="string">'peggy'</span>] = []</span><br><span class="line">graph[<span class="string">'thom'</span>] = []</span><br><span class="line">graph[<span class="string">'jonny'</span>] = []</span><br><span class="line"></span><br><span class="line">search_queue = deque() <span class="comment">#队列</span></span><br><span class="line"></span><br><span class="line">search_queue += graph[<span class="string">'me'</span>] <span class="comment">#压入我的临近节点</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findSeller</span><span class="params">(search_queue)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> search_queue:</span><br><span class="line">        person = search_queue.popleft()  <span class="comment"># 取出第一个临近节点</span></span><br><span class="line">        <span class="keyword">if</span> personIsSeller(person):</span><br><span class="line">            print(person + <span class="string">"is a mango seller"</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            search_queue += graph[person] <span class="comment">#压入临近节点的临近节点</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">personIsSeller</span><span class="params">(person)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> person[<span class="number">-1</span>] == <span class="string">'m'</span></span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<h2 id="C-实现"><a href="#C-实现" class="headerlink" title="C++实现"></a>C++实现</h2><h3 id="breadthFirstSearch-hpp"><a href="#breadthFirstSearch-hpp" class="headerlink" title="breadthFirstSearch.hpp"></a>breadthFirstSearch.hpp</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  breadthFirstSearch.hpp</span></span><br><span class="line"><span class="comment">//  Dat_Structure</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by  云子谣 on 2019/12/18.</span></span><br><span class="line"><span class="comment">//  Copyright © 2019  云子谣. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> breadthFirstSearch_hpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> breadthFirstSearch_hpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;utility&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">breadthFirstSearch</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    breadthFirstSearch();</span><br><span class="line">    ~breadthFirstSearch();</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">map</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; graph;<span class="comment">//图结构</span></span><br><span class="line">    <span class="comment">//me's relationship</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; me;</span><br><span class="line">    <span class="comment">//1DRelationship</span></span><br><span class="line">    <span class="comment">//bob's relationship</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; bob;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//claire's relationship</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; claire;</span><br><span class="line">    <span class="comment">//alice's relationship</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; alice;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2DRelationship</span></span><br><span class="line">    <span class="comment">//anuj,peggy,thom,jonny</span></span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; anuj;</span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; peggy;</span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; thom;</span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;&gt; jonny;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">queue</span>&lt;<span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt; &gt; q;</span><br><span class="line">    <span class="comment">//std::map&lt; std::string, std::vector&lt;std::string&gt; &gt; graph;</span></span><br><span class="line">    <span class="comment">//std::queue&lt;&gt;</span></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">queue</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span> &gt; q_s;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">findSeller</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">PersonIsSeller</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">string</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt; getSecondElementFromPair(<span class="built_in">std</span>::pair&lt;<span class="built_in">std</span>::<span class="built_in">string</span>, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt; &gt;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//bool checkPerson(std::vector&lt;std::string&gt;);</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">checkPerson</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">PushNameIntoQS</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;)</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* breadthFirstSearch_hpp */</span></span></span><br></pre></td></tr></table></figure>
 
+<p>breadthFirstSearch.cpp</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  breadthFirstSearch.cpp</span></span><br><span class="line"><span class="comment">//  Dat_Structure</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by  云子谣 on 2019/12/18.</span></span><br><span class="line"><span class="comment">//  Copyright © 2019  云子谣. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"breadthFirstSearch.hpp"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">breadthFirstSearch::breadthFirstSearch()</span><br><span class="line">&#123;</span><br><span class="line">    me  = &#123;<span class="string">"me"</span>, &#123;<span class="string">"alice"</span>, <span class="string">"bob"</span>, <span class="string">"claire"</span>&#125;&#125;;</span><br><span class="line">    <span class="comment">//一度关系</span></span><br><span class="line">    bob = &#123;<span class="string">"bob"</span>, &#123;<span class="string">"anuj"</span>,<span class="string">"peggy"</span>&#125;&#125;;</span><br><span class="line">    claire = &#123;<span class="string">"claire"</span>, &#123;<span class="string">"thom"</span>,<span class="string">"jonny"</span>&#125;&#125;;</span><br><span class="line">    alice = &#123;<span class="string">"alice"</span>, &#123;<span class="string">"peggy"</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//二度关系</span></span><br><span class="line">    anuj = &#123;<span class="string">"anuj"</span>, &#123;<span class="string">""</span>&#125;&#125;;</span><br><span class="line">    peggy = &#123;<span class="string">"anuj"</span>, &#123;<span class="string">""</span>&#125;&#125;;</span><br><span class="line">    thom = &#123;<span class="string">"anuj"</span>, &#123;<span class="string">""</span>&#125;&#125;;</span><br><span class="line">    jonny = &#123;<span class="string">"anuj"</span>, &#123;<span class="string">""</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    graph.insert(me);</span><br><span class="line"></span><br><span class="line">    graph.insert(bob);</span><br><span class="line">    graph.insert(claire);</span><br><span class="line">    graph.insert(alice);</span><br><span class="line"></span><br><span class="line">    graph.insert(anuj);</span><br><span class="line">    graph.insert(peggy);</span><br><span class="line">    graph.insert(thom);</span><br><span class="line">    graph.insert(jonny);</span><br><span class="line"></span><br><span class="line">    q.push(graph[<span class="string">"me"</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">bool</span> breadthFirstSearch::findSeller()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span> (q.<span class="built_in">size</span>() != <span class="number">0</span> )</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//        string curPeoples =</span></span><br><span class="line">        <span class="keyword">auto</span> curPeoples = q.front();</span><br><span class="line">        q.pop();</span><br><span class="line">        <span class="comment">//PushNameIntoQS(curPeoples);</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> i = curPeoples.<span class="built_in">begin</span>();i != curPeoples.<span class="built_in">end</span>(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"current People is "</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            <span class="keyword">if</span>(PersonIsSeller(*i))</span><br><span class="line">            &#123;</span><br><span class="line">                 <span class="built_in">cout</span> &lt;&lt; <span class="string">"seller is "</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                 <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                q.push(graph[*i]);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//string curPeople = q_s.front();</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//        while (q_s.size() != 0)</span></span><br><span class="line"><span class="comment">//        &#123;</span></span><br><span class="line"><span class="comment">//            string curPeople = q_s.front();</span></span><br><span class="line"><span class="comment">//            q_s.pop();</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//            if (PersonIsSeller(curPeople))</span></span><br><span class="line"><span class="comment">//            &#123;</span></span><br><span class="line"><span class="comment">//                cout &lt;&lt; curPeople &lt;&lt; endl;</span></span><br><span class="line"><span class="comment">//                return true;</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//            else</span></span><br><span class="line"><span class="comment">//            &#123;</span></span><br><span class="line"><span class="comment">//                q.push(graph[curPeople]);</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//    while (q.size() != 0)</span></span><br><span class="line"><span class="comment">//    &#123;</span></span><br><span class="line"><span class="comment">//        auto person = q.front();</span></span><br><span class="line"><span class="comment">//        q.pop();</span></span><br><span class="line"><span class="comment">//        if (checkPerson(person))</span></span><br><span class="line"><span class="comment">//        &#123;</span></span><br><span class="line"><span class="comment">//            cout &lt;&lt; "is the seller" &lt;&lt; endl;</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line"><span class="comment">//        else</span></span><br><span class="line"><span class="comment">//        &#123;</span></span><br><span class="line">          <span class="comment">//q.push();</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"failed"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">bool</span> breadthFirstSearch::PersonIsSeller(<span class="built_in">string</span> person)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"for "</span> &lt;&lt; person &lt;&lt; <span class="string">"the last is "</span> &lt;&lt; person[<span class="number">-1</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"for "</span> &lt;&lt; person &lt;&lt; <span class="string">"the last is "</span> &lt;&lt; person[person.<span class="built_in">size</span>()<span class="number">-1</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> person[person.<span class="built_in">size</span>()<span class="number">-1</span>] == <span class="string">'m'</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; breadthFirstSearch::getSecondElementFromPair(pair&lt;<span class="built_in">string</span>, <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &gt; p)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> p.second;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span>  breadthFirstSearch::checkPerson(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; person)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//   for (auto i = person.begin(); i != person.end(); i++)</span></span><br><span class="line"><span class="comment">//   &#123;</span></span><br><span class="line"><span class="comment">//      if(PersonIsSeller(*i))</span></span><br><span class="line"><span class="comment">//        &#123;</span></span><br><span class="line"><span class="comment">//            cout &lt;&lt; *i &lt;&lt; endl;</span></span><br><span class="line"><span class="comment">//            return *i;</span></span><br><span class="line"><span class="comment">//       &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//   &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> breadthFirstSearch::PushNameIntoQS(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; CurPeoples )</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> i = CurPeoples.<span class="built_in">begin</span>(); i != CurPeoples.<span class="built_in">end</span>(); i++) &#123;</span><br><span class="line">        q_s.push(*i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/16/magazine-2019-11-25/" class="archive-article-date">
-  	<time datetime="2019-11-16T02:41:47.145Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/16/magazine-2019-11-25/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">magazine-2019-11-25</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/16/magazine-2019-11-25/">magazine-2019-11-25</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/15/%E5%90%AC%E6%8A%84/" class="archive-article-date">
-  	<time datetime="2019-11-15T13:35:05.939Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/15/%E5%90%AC%E6%8A%84/">听抄</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-11-15T13:20:01.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Qt中的拖放机制学习笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/13/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2019-11-13T10:17:37.295Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/13/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">创建博客教程</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/10/%E9%80%A0%E5%8F%A5/" class="archive-article-date">
-  	<time datetime="2019-10-10T13:41:00.824Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/10/%E9%80%A0%E5%8F%A5/">造句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -349,8 +329,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
