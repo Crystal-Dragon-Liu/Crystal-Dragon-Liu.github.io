@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Lyb_blog</title>
+  <title>优先队列学习下 | Lyb_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Lyb_blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="1.sink接下来，写一个模版类来完成最基本的优先队列实现。 该类主要实现以下几个方法sink(由上到下的堆有序化方法)、swim、insert、delete、pqless、exch  sink 函数用于实现由上到下的堆有序方法，假设此时因为某节点的优先级变低，使得它的优先级比子节点优先级低，打破了原来的堆有序状态，需要对二叉树的此节点位置开始，从上到下依据优先级进行重新构建堆有序状态。若某K节点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优先队列学习下">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;02&#x2F;25&#x2F;%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B8%8B&#x2F;index.html">
 <meta property="og:site_name" content="Lyb_blog">
+<meta property="og:description" content="1.sink接下来，写一个模版类来完成最基本的优先队列实现。 该类主要实现以下几个方法sink(由上到下的堆有序化方法)、swim、insert、delete、pqless、exch  sink 函数用于实现由上到下的堆有序方法，假设此时因为某节点的优先级变低，使得它的优先级比子节点优先级低，打破了原来的堆有序状态，需要对二叉树的此节点位置开始，从上到下依据优先级进行重新构建堆有序状态。若某K节点">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-02-25T13:28:32.321Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Lyb_blog" type="application/atom+xml">
@@ -149,16 +152,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-优先队列学习下" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-优先队列学习下" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B8%8B/">优先队列学习下</a>
+    <h1 class="article-title" itemprop="name">
+      优先队列学习下
     </h1>
   
 
@@ -201,6 +202,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -208,16 +230,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B8%8B/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B8%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">优先队列</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -237,390 +318,14 @@
 
 
 
-
   
-    <article id="post-优先队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/">优先队列</a>
-    </h1>
   
 
-        
-        <a href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-02-25T06:48:32.001Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="优先队列学习-上"><a href="#优先队列学习-上" class="headerlink" title="优先队列学习(上)"></a><center><font color="orange">优先队列学习(上)</font></center></h1><h2 id="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"><a href="#本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。" class="headerlink" title="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"></a>本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。</h2><h4 id="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"><a href="#在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。" class="headerlink" title="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"></a>在插入一个元素时，优先队列的有序状态有可能会被打破，使用<font color="orange">从下到上的堆有序化</font>进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用<font color="orange">从上到下的堆有序化</font>进行重新排列，最终使优先队列重新回到有序状态。</h4>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-economist阅读" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/23/economist%E9%98%85%E8%AF%BB/">economist阅读</a>
-    </h1>
   
 
-        
-        <a href="/2020/02/23/economist%E9%98%85%E8%AF%BB/" class="archive-article-date">
-  	<time datetime="2020-02-23T15:04:04.906Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="经济学人-MAY-12TH–18TH-2018"><a href="#经济学人-MAY-12TH–18TH-2018" class="headerlink" title="经济学人 MAY 12TH–18TH 2018"></a><center><font color="orange">经济学人 MAY 12TH–18TH 2018</font></center></h1><h2 id="page-32"><a href="#page-32" class="headerlink" title="page 32"></a>page 32</h2><p>ing the government to close the country’s financial system to questionable Russian money. Further escalation with the West now seems both risky and unlikely to help Mr Putin much. According to polls, the most popular complaint among the Rus- sian public about the Kremlin is that it pays too much attention to foreign policy, and thus neglects domestic problems.<br>As a result, Mr Putin’s main message— both in his pre-election state-of-the-nation address and in his inauguration speech— was a promise to concentrate on techno- logical modernisation, while maintaining tight control over politics. Not wanting to look like an ageing dictator, Mr Putin, who is 65, posed with young activists. On cam- era, they thanked him for all the opportu-nities he is offering them. In the first decree【命令】 of his new term, Mr Putin ordered his gov- ernment to improve health care and edu- cation and to raise living standards. That may be tricky, given the handicaps【不利因素】 of eco- nomic stagnation, sanctions and endemic【地方】 corruption, though rising oil prices will now help.<br>His decree copies the goals outlined in a reform programme drafted by Alexei Ku- drin, a former finance minister and a li- censed liberal in Mr Putin’s entourage【随从】. However, it does not mention the means Mr Kudrin thinks his plans would require, such as political competition and an over- haul of the judicial system to foster the rule of law. Mr Putin gave no indication that his new administration will be much different<br>The Economist May 12th 2018 from the old one on any of these counts.<br>On the contrary, he reappointed his pliable【柔软的】 sidekick【伙伴】, Dmitry Medvedev, as prime min- ister. This left the Russian elite none the wiser as to whom he might be grooming as his successor if he really plans to step aside【下台】 when his term ends in 2024.<br>Muddling【含糊不清的】 through until then will be in- creasingly difficult. Economic rents have shrunk, thanks to stagnation, and rich Rus- sians find it harder to shelter their assets and children in the West. As a result infight- ing within the elite is likely to intensify; re- gional powerbrokers【政治巨头】 feel increasingly alienated【疏远了】 and vulnerable. Growing politi- cal instability seems likely. Even in his shiny new bulletproof car, Mr Putin faces a bumpy ride.</p>
-<p>Warble games</p>
-<p>EUROPE is breaking up. Where once the continent was connected by a web of tight relationships, it is now fragmenting<br>into peripheral【外围】 alliances. The core coun- tries are becoming more isolated; collu- sion among voting blocs【集团】 is on the rise.<br>These are the conclusions of a paper, published last year by three researchers at the University of Central Florida, about the Eurovision Song Contest, the 63rd of which began in Lisbon on May 8th. The competition is as notorious for its politics as its cheesy ballads【叙事诗】. Last year Russia withdrew after the host, Ukraine, denied entry to its contestant, who had performed in Crimea after Russia had invaded and annexed【附加】 the region in 2014. Ukraine had previously won the compe- tition with a cheery song about Joseph Stalin’s deportation of Crimean Tatars during the 1940s. In 2015 Armenia’s lyrics marked 100 years since the massacre of 1.5m people, which its neighbours Turkey and Azerbaijan refuse to recognise as genocide. Turkey has boycotted the event since 2013, in protest against the automat- ic qualification to the final round enjoyed by the “Big Five”: Germany, Britain, France, Spain and Italy.<br>Yet the data show that neighbourly tensions tend to be outweighed by collu- sive voting, defined as a consistently greater exchange of points between two countries than would be expected by random allocation【分配】. The fraternising【亲善】 has increased sharply since 1997, when votes by the general public were introduced to supplement those cast by juries of so- called experts. The trend has been most marked among adjacent countries at the continent’s edges. In the past 20 years the Nordic bloc has won seven times; former Soviet states, six times. The “Big Five”, meanwhile, have rarely co-operated and often been shunned by everybody else. Their contestants have won only once (Lena, a German singer, triumphed in 2010 with “Satellite”). They have finished last in the final nine times, with nul points in 2003 and 2015.</p>
-<p>To Russophones with love</p>
-<p>Estonia gets creative about integrating local Russian-speakers<br>THE grey Stalinist blocks, potholed roads and intimidating communist-era plazas hardly suggest a hipster【赶时髦】 hotspot. But Narva, an Estonian town on Russia’s bor- der, is suddenly all the rage. “Within the last six months Narva has become hip in Estonia. Everyone wants to go there,” says Helen Sildna, who runs Tallinn Music Week and who is going to stage a music fes- tival in Narva for the first time in Septem- ber. The abandoned factory buildings, cheap living space and the frisson【战栗】 of sitting on a cultural front line between Russia and the West will attract trendsetters—or so Es- tonian officials hope. Making Narva cool is part of Estonia’s new strategy to integrate Russian-speakers in Estonia.<br>After Russia’s annexation【合并物】 of Crimea in 2014, Western journalists scoured【擦拭】 maps for other places that could be next on Vladimir Putin’s hit-list. They stumbled on Narva, where almost the entire population is Rus- sian-speaking. The sight of Russian flags and border guards below the medieval for- tress on the other side of a narrow river made for suitably dramatic pictures on news bulletins. Suddenly Narva hit inter- national headlines as “the next Crimea”.<br>That was always too simplistic. Narva’s residents may have cultural, historical and linguistic ties to Moscow, but few of them want to live in Russia. Wages, pensions and living standards are higher in Estonia than on the other side of the border. Narva is not Crimea, and Estonia is not Ukraine. It is much less corrupt, and also a member of the EU and NATO. So it is far more difficult for Russia to meddle in Estonia than it was in Ukraine. And if any Russophone Esto</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/23/economist%E9%98%85%E8%AF%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-雅思作文练习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/">雅思作文练习</a>
-    </h1>
   
 
-        
-        <a href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-02-23T02:48:39.670Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="雅思作文练习"><a href="#雅思作文练习" class="headerlink" title=" 雅思作文练习 "></a><center><font color="orange"> 雅思作文练习 </font></center></h1><h3 id="2020-02-23-更新"><a href="#2020-02-23-更新" class="headerlink" title="2020-02-23 更新"></a>2020-02-23 更新</h3>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithm-practice（1）BreadthFirstSearch" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/">algorithm-practice（1）BreadthFirstSearch</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/" class="archive-article-date">
-  	<time datetime="2019-12-21T14:00:32.752Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="算法练习——广度优先搜索（C-Python实现）"><a href="#算法练习——广度优先搜索（C-Python实现）" class="headerlink" title="算法练习——广度优先搜索（C++/Python实现）"></a><center>算法练习——广度优先搜索（C++/Python实现）<center></center></center></h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-magazine-2019-11-25" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/16/magazine-2019-11-25/">magazine-2019-11-25</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/16/magazine-2019-11-25/" class="archive-article-date">
-  	<time datetime="2019-11-16T02:41:47.145Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Memories-of-Emmett-Till"><a href="#Memories-of-Emmett-Till" class="headerlink" title="Memories of Emmett Till "></a><center>Memories of Emmett Till </center></h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/16/magazine-2019-11-25/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Qt中的拖放机制学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Qt中的拖放机制学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-11-15T13:20:01.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Drag-和-Drop-的学习笔记"><a href="#Drag-和-Drop-的学习笔记" class="headerlink" title="Drag 和 Drop 的学习笔记 "></a><center>Drag 和 Drop 的学习笔记 </center></h1><h5 id="记录对QDrag以及相关类的理解"><a href="#记录对QDrag以及相关类的理解" class="headerlink" title="记录对QDrag以及相关类的理解"></a>记录对QDrag以及相关类的理解</h5>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -643,8 +348,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
