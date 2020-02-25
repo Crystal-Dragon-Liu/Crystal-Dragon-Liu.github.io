@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Lyb_blog</title>
+  <title>优先队列 | Lyb_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Lyb_blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="优先队列学习本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优先队列">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;02&#x2F;25&#x2F;%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97&#x2F;index.html">
 <meta property="og:site_name" content="Lyb_blog">
+<meta property="og:description" content="优先队列学习本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-02-25T08:33:19.899Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Lyb_blog" type="application/atom+xml">
@@ -149,16 +152,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-优先队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-优先队列" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/">优先队列</a>
+    <h1 class="article-title" itemprop="name">
+      优先队列
     </h1>
   
 
@@ -171,10 +172,60 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="优先队列学习"><a href="#优先队列学习" class="headerlink" title="优先队列学习"></a><center><font color="orange">优先队列学习</font></center></h1><h2 id="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"><a href="#本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。" class="headerlink" title="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"></a>本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。</h2><h4 id="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"><a href="#在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。" class="headerlink" title="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"></a>在插入一个元素时，优先队列的有序状态有可能会被打破，使用<font color="orange">从下到上的堆有序化</font>进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用<font color="orange">从上到下的堆有序化</font>进行重新排列，最终使优先队列重新回到有序状态。</h4>
-        
+        <h1 id="优先队列学习"><a href="#优先队列学习" class="headerlink" title="优先队列学习"></a><center><font color="orange">优先队列学习</font></center></h1><h2 id="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"><a href="#本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。" class="headerlink" title="本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。"></a>本篇为优先队列学习笔记，优先队列与队列相似，但优先队列中的元素整体上是有序的。</h2><h4 id="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"><a href="#在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。" class="headerlink" title="在插入一个元素时，优先队列的有序状态有可能会被打破，使用从下到上的堆有序化进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用从上到下的堆有序化进行重新排列，最终使优先队列重新回到有序状态。"></a>在插入一个元素时，优先队列的有序状态有可能会被打破，使用<font color="orange">从下到上的堆有序化</font>进行重新排序，确定每个元素的优先级，删除一个元素时，有序状态也有可能被打破，使用使用<font color="orange">从上到下的堆有序化</font>进行重新排列，最终使优先队列重新回到有序状态。</h4><a id="more"></a>
+
+<hr>
+<p>想要构建一个优先队列，一个数组即可作为其载体。本次使用<code>完全二叉树</code>作为实现优先队列的方法，另外还给该二叉树规定为<code>堆有序</code>，使其变成二叉堆，用来方便地完成优先队列的基本操作————“删除最大元素”、“插入元素”。</p>
+<pre><code>堆有序是指在二叉树中，每个父节点都比其两个子节点优先级高或者等于他们。</code></pre><p>基于以上认识，可以开始着手实现一个优先队列了。</p>
+<p>首先要做的就是维护一个数组，为了计算方便，该数组的第0个位置（即索引为0）不存储数据，第1个位置用于存储根结点数据，第2和第3个位置用于存储根节点的两个子节点的位置，第4和第5个位置用于存储第2个位置数据的两个子节点数据，第6和第7个位置用于存储第3个位置数据第两个子节点数据…….</p>
+<p>以此类推，可知第K个节点的父节点为数组第k/2个位置上的数据，而第K个节点的两个子节点的分别为数组第2k个位置以及第2k+1位置的数据。根据此存储数据方式，实际上可以很方便的对这个二叉树进行遍历，并更新其有序化状态。</p>
+<p>在试图实现优先队列之前，我们先实现两个常用的交换和比较大小的内联函数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">exch</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> j, <span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    swap(a[j], a[k]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">pqless</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a[x] &lt;= a[y])</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="接下来，写一个模版类来完成最基本的优先队列实现。"><a href="#接下来，写一个模版类来完成最基本的优先队列实现。" class="headerlink" title="接下来，写一个模版类来完成最基本的优先队列实现。"></a>接下来，写一个模版类来完成最基本的优先队列实现。</h2><p>该类主要实现以下几个方法：</p>
+<p>sink(由上到下的堆有序化方法)、swim（由下到上的堆有序方法）、insert（插入元素的方法）、delete(删除最大元素的方法———即删除优先级最高元素)、pqless(比较两个元素大小的方法)、exch(交换两个元素的方法)。</p>
+<h4 id="1-sink"><a href="#1-sink" class="headerlink" title="1.sink"></a><font color="orange">1.sink</font></h4><p>sink 函数用于实现由上到下的堆有序方法，假设此时因为某节点的优先级变低，使得它的优先级比子节点优先级低，打破了原来的堆有序状态，需要对二叉树的此节点位置开始，从上到下依据优先级进行重新构建堆有序状态。若某K节点的优先级变低，比较它第两个子节点—-第2k和第2k+1节点的大小，寻找这两个子节点中数据优先级最大的，这样做的原因是堆有序的规则，父节点必须大于等于它的子节点，在父节点的优先级发生变化而需要与子节点交换时，还应该继续遵守堆有序的规则，因此寻找两个子节点中优先级最高的作为<code>可能的父节点</code>,在成为父节点之前，还需要保证原先的父节点确实比这个父节点的较大的一个子节点小，具体算法下所示：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">N = pq.<span class="built_in">size</span>() <span class="number">-1</span>;</span><br><span class="line"><span class="keyword">while</span>(<span class="number">2</span>*k &lt;= N</span><br><span class="line">&#123;</span><br><span class="line">  j = <span class="number">2</span>*k;</span><br><span class="line">  <span class="keyword">if</span>((j &lt; N) &amp;&amp; pqless(pq, j, j+<span class="number">1</span>))</span><br><span class="line">  j++;</span><br><span class="line">  <span class="keyword">if</span>(!pqless(pq,k,j)) <span class="keyword">break</span>;</span><br><span class="line">  exch(pq, k, j);</span><br><span class="line">  k = j;</span><br><span class="line">  <span class="comment">//继续从上到下遍历子节点，直到数组的边缘。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-swim"><a href="#2-swim" class="headerlink" title="2.swim"></a><font color="orange">2.swim</font></h4><p>swim 函数用于实现由下到上的堆有序方法，应用场景为当某节点的优先级变高，有可能破坏二叉堆的堆有序状态，需要从该节点开始，往上(数组中是向前)进行父节点遍历，直到恢复新的堆有序状态。实现过程比较简单，只需要比较父节点和该节点本身的优先级,具体实现方法如下所示：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">N = pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line"><span class="keyword">while</span> ((k&gt;<span class="number">1</span>)&amp;&amp;!pqless(pq, k, k/<span class="number">2</span>)</span><br><span class="line">&#123;</span><br><span class="line">  exch(pq, k, k/<span class="number">2</span>);</span><br><span class="line">  k = k/<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-insert"><a href="#3-insert" class="headerlink" title="3.insert"></a><font color="orange">3.insert</font></h4><p>插入一个元素，假设需要插入一个元素，一般情况下会破坏堆有序状态，选择从数组最后插入，即从二叉树的最底层插入一个元素，接着使该二叉堆恢复有序状态即可。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">pq.push_back(val); <span class="comment">//val 是一个新的数据</span></span><br><span class="line"><span class="keyword">int</span> NN = pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">swim(NN);</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-delete"><a href="#4-delete" class="headerlink" title="4.delete"></a><font color="orange">4.delete</font></h4><p>删除一个优先级最高的元素，该方法是优先队列的基本方法。一般是将优先队列中最后一个元素与最高级元素交换，并从队列中删除最高级元素，然后将被交换到最高级节点的这个最后一个元素进行堆有序化，使得优先队列重新回到堆有序状态。具体方法如下所示：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">T <span class="built_in">max</span> = pq[<span class="number">1</span>];</span><br><span class="line">N = pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">exch(pq,<span class="number">1</span>,N--);</span><br><span class="line">pq.assign(pq.<span class="built_in">begin</span>,pq.<span class="built_in">end</span>()<span class="number">-1</span>)</span><br><span class="line">sink(<span class="number">1</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">max</span>;</span><br></pre></td></tr></table></figure>
+<p>完成了以上几个方法，基本就解决了优先队列的基本操作实现，稍对代码进行调整，可在main函数中进行验证自己的优先队列实现。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">MaxPQ&lt;<span class="keyword">int</span>&gt; maxpq(<span class="number">5</span>);</span><br><span class="line">   MinPQ&lt;<span class="keyword">int</span>&gt; minpq(<span class="number">5</span>);</span><br><span class="line">   maxpq.insert(<span class="number">1</span>);</span><br><span class="line"><span class="comment">//    maxpq.print();</span></span><br><span class="line">   maxpq.insert(<span class="number">2</span>);</span><br><span class="line"><span class="comment">//    maxpq.print();</span></span><br><span class="line">   maxpq.insert(<span class="number">3</span>);</span><br><span class="line"><span class="comment">//    maxpq.print();</span></span><br><span class="line">   maxpq.insert(<span class="number">4</span>);</span><br><span class="line"><span class="comment">//    maxpq.print();</span></span><br><span class="line">   maxpq.insert(<span class="number">5</span>);</span><br><span class="line"><span class="comment">//    maxpq.print();</span></span><br><span class="line">   minpq.insert(<span class="number">3</span>);</span><br><span class="line">   minpq.insert(<span class="number">1</span>);</span><br><span class="line">   minpq.insert(<span class="number">2</span>);</span><br><span class="line">   minpq.insert(<span class="number">4</span>);</span><br><span class="line">   minpq.insert(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; maxpq.deleteMax() &lt;&lt; <span class="string">" "</span> &lt;&lt; minpq.deleteMin() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">  maxpq.<span class="built_in">print</span>();</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; maxpq.deleteMax() &lt;&lt; <span class="string">" "</span> &lt;&lt; minpq.deleteMin() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"> maxpq.<span class="built_in">print</span>();</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; maxpq.deleteMax() &lt;&lt; <span class="string">" "</span> &lt;&lt; minpq.deleteMin() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  maxpq.<span class="built_in">print</span>();</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; maxpq.deleteMax() &lt;&lt; <span class="string">" "</span> &lt;&lt; minpq.deleteMin() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"> maxpq.<span class="built_in">print</span>();</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; maxpq.deleteMax() &lt;&lt; <span class="string">" "</span> &lt;&lt; minpq.deleteMin() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">   maxpq.<span class="built_in">print</span>();</span><br><span class="line">   minpq.<span class="built_in">print</span>();</span><br></pre></td></tr></table></figure>
+
+<p>本次代码运行结果如下所示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">vector容量1</span><br><span class="line">插入元素：1</span><br><span class="line">---------目前vector 内容---------</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  1  </span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  1  </span><br><span class="line">vector容量2</span><br><span class="line">插入元素：2</span><br><span class="line">---------目前vector 内容---------</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  1  2  </span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  2  1  </span><br><span class="line">vector容量3</span><br><span class="line">插入元素：3</span><br><span class="line">---------目前vector 内容---------</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  2  1  3  </span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  3  1  2  </span><br><span class="line">vector容量4</span><br><span class="line">插入元素：4</span><br><span class="line">---------目前vector 内容---------</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  3  1  2  4  </span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  4  3  2  1  </span><br><span class="line">vector容量5</span><br><span class="line">插入元素：5</span><br><span class="line">---------目前vector 内容---------</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  4  3  2  1  5  </span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  5  4  2  1  3  </span><br><span class="line">5 1</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  4  3  2  1  </span><br><span class="line">4 2</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  3  1  2  </span><br><span class="line">3 3</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  2  1  </span><br><span class="line">2 4</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  1  </span><br><span class="line">1 5</span><br><span class="line">-----------Max当前优先队列内容----------</span><br><span class="line">0  </span><br><span class="line">-----------Min当前优先队列内容----------</span><br><span class="line">0  5  4  3  2  1  </span><br><span class="line">Program ended with exit code: 0</span><br></pre></td></tr></table></figure>
+
+
+<p>下面是完整代码</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Priority_Queue_practise.hpp</span></span><br><span class="line"><span class="comment">//  Dat_Structure</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by  云子谣 on 2020/2/20.</span></span><br><span class="line"><span class="comment">//  Copyright © 2020  云子谣. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> Priority_Queue_practise_hpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Priority_Queue_practise_hpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* Priority_Queue_practise_hpp */</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;<span class="class"><span class="keyword">class</span> <span class="title">MaxPQ</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    MaxPQ(<span class="keyword">int</span> maxN);</span><br><span class="line">    ~MaxPQ();</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isEmpty</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(T val)</span></span>;</span><br><span class="line">    <span class="function">T <span class="title">deleteMax</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">swim</span><span class="params">(<span class="keyword">int</span> k)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sink</span><span class="params">(<span class="keyword">int</span> k)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">exch</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> j, <span class="keyword">int</span> k)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="keyword">bool</span> <span class="title">pqless</span><span class="params">(T &amp;a, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;T&gt; pq;</span><br><span class="line">    <span class="keyword">int</span> N = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">MinPQ</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    MinPQ(<span class="keyword">int</span> maxN);</span><br><span class="line">    ~MinPQ();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isEmpty</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(T val)</span></span>;</span><br><span class="line">    <span class="function">T <span class="title">deleteMin</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">swim</span><span class="params">(<span class="keyword">int</span> k)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sink</span><span class="params">(<span class="keyword">int</span> k)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">exch</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> j, <span class="keyword">int</span> k)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="keyword">bool</span> <span class="title">pqless</span><span class="params">(T &amp;a, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;T&gt; pq;</span><br><span class="line">    <span class="keyword">int</span> N = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">exch</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> j, <span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    swap(a[j], a[k]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">pqless</span><span class="params">(<span class="built_in">vector</span>&lt;T&gt; &amp;a, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a[x] &lt;= a[y])</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;MaxPQ&lt;T&gt;::MaxPQ(<span class="keyword">int</span> maxN)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//  pq.assign(maxN+1, 0);</span></span><br><span class="line">    pq.resize(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;MaxPQ&lt;T&gt;::~MaxPQ()</span><br><span class="line">&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">bool</span> MaxPQ&lt;T&gt;::isEmpty()</span><br><span class="line">&#123;</span><br><span class="line">    N = pq.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">if</span>(N)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MaxPQ&lt;T&gt;::insert(T val)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//    pq[++N] = val;</span></span><br><span class="line"><span class="comment">//    swim(N);</span></span><br><span class="line">    <span class="keyword">auto</span> i = val;</span><br><span class="line">    <span class="comment">//cout &lt;&lt; "接收元素：" &lt;&lt; i &lt;&lt; endl;</span></span><br><span class="line">    pq.push_back(i);</span><br><span class="line">    <span class="keyword">int</span> NN= pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"vector容量"</span> &lt;&lt; NN &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"插入元素："</span> &lt;&lt; *(pq.<span class="built_in">end</span>()<span class="number">-1</span>)&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"---------目前vector 内容---------"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">print</span>();</span><br><span class="line">    swim(NN);</span><br><span class="line">    <span class="built_in">print</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T MaxPQ&lt;T&gt;::deleteMax()</span><br><span class="line">&#123;</span><br><span class="line">    N = pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">    T <span class="built_in">max</span> = pq[<span class="number">1</span>];</span><br><span class="line">    exch(pq, <span class="number">1</span>, N--);<span class="comment">// 交换最后一个元素和最大元素， 另N-1 代表 整个队列大小减一</span></span><br><span class="line"></span><br><span class="line">    pq.assign(pq.<span class="built_in">begin</span>(), pq.<span class="built_in">end</span>()<span class="number">-1</span>);</span><br><span class="line">    sink(<span class="number">1</span>);</span><br><span class="line">    <span class="comment">//pq.resize(N-1);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">max</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MaxPQ&lt;T&gt;::sink(<span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">    N = pq.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">while</span> (k*<span class="number">2</span> &lt;= N)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> j = k*<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>((j &lt; N) &amp;&amp; pqless(pq, j, j+<span class="number">1</span>))<span class="comment">// 找k的两个子节点中最大的</span></span><br><span class="line">        &#123;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(!pqless(pq, k, j))</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        exch(pq, k, j);</span><br><span class="line">        k = j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MaxPQ&lt;T&gt;::swim(<span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>((k&gt;<span class="number">1</span>)&amp;&amp;!pqless(pq, k, k/<span class="number">2</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        exch(pq, k, k/<span class="number">2</span>);</span><br><span class="line">        k = k/<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;MinPQ&lt;T&gt;::MinPQ(<span class="keyword">int</span> maxN)</span><br><span class="line">&#123;</span><br><span class="line">    pq.assign(maxN+<span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;MinPQ&lt;T&gt;::~MinPQ()&#123;&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MinPQ&lt;T&gt;::insert(T val)</span><br><span class="line">&#123;</span><br><span class="line">    pq[++N] = val;</span><br><span class="line">    <span class="comment">//pq.push_back(val);</span></span><br><span class="line">    swim(N);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">bool</span> MinPQ&lt;T&gt;::isEmpty()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(N) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T MinPQ&lt;T&gt;::deleteMin()</span><br><span class="line">&#123;</span><br><span class="line">    T <span class="built_in">min</span> = pq[<span class="number">1</span>];</span><br><span class="line">    exch(pq, <span class="number">1</span>, N--);</span><br><span class="line">    <span class="comment">//pq.erase(pq.end());</span></span><br><span class="line">    <span class="comment">//pq[N+1] = nullptr;</span></span><br><span class="line">    sink(<span class="number">1</span>);</span><br><span class="line">    <span class="comment">//pq.resize(N-1);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MinPQ&lt;T&gt;::sink(<span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(k*<span class="number">2</span> &lt;= N)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> j = k*<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>((j&lt;N)&amp;&amp;!pqless(pq, j, j+<span class="number">1</span>))</span><br><span class="line">            j++;</span><br><span class="line">        <span class="keyword">if</span>(pqless(pq, k, j))</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        exch(pq, k, j);</span><br><span class="line">        k = j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MinPQ&lt;T&gt;::swim(<span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>((k&gt;<span class="number">1</span>)&amp;&amp;!pqless(pq, k/<span class="number">2</span>, k))</span><br><span class="line">    &#123;</span><br><span class="line">        exch(pq, k/<span class="number">2</span>, k);</span><br><span class="line">        k = k/<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MaxPQ&lt;T&gt;::<span class="built_in">print</span>()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"-----------Max当前优先队列内容----------"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; v : MaxPQ&lt;T&gt;::pq) &#123;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; v &lt;&lt; <span class="string">" "</span> &lt;&lt; <span class="built_in">std</span>::ends;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">void</span> MinPQ&lt;T&gt;::<span class="built_in">print</span>()</span><br><span class="line">&#123;</span><br><span class="line">     <span class="built_in">cout</span> &lt;&lt; <span class="string">"-----------Min当前优先队列内容----------"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; v : MinPQ&lt;T&gt;::pq) &#123;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; v &lt;&lt; <span class="string">" "</span> &lt;&lt; <span class="built_in">std</span>::ends;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//054213</span></span><br><span class="line"><span class="comment">//04321</span></span><br><span class="line"><span class="comment">//0312</span></span><br><span class="line"><span class="comment">//021</span></span><br><span class="line"><span class="comment">//01</span></span><br></pre></td></tr></table></figure>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -183,16 +234,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/25/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/23/economist%E9%98%85%E8%AF%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">economist阅读</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -212,327 +322,14 @@
 
 
 
-
   
-    <article id="post-economist阅读" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/23/economist%E9%98%85%E8%AF%BB/">economist阅读</a>
-    </h1>
   
 
-        
-        <a href="/2020/02/23/economist%E9%98%85%E8%AF%BB/" class="archive-article-date">
-  	<time datetime="2020-02-23T15:04:04.906Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="经济学人-MAY-12TH–18TH-2018"><a href="#经济学人-MAY-12TH–18TH-2018" class="headerlink" title="经济学人 MAY 12TH–18TH 2018"></a><center><font color="orange">经济学人 MAY 12TH–18TH 2018</font></center></h1><h2 id="page-32"><a href="#page-32" class="headerlink" title="page 32"></a>page 32</h2><p>ing the government to close the country’s financial system to questionable Russian money. Further escalation with the West now seems both risky and unlikely to help Mr Putin much. According to polls, the most popular complaint among the Rus- sian public about the Kremlin is that it pays too much attention to foreign policy, and thus neglects domestic problems.<br>As a result, Mr Putin’s main message— both in his pre-election state-of-the-nation address and in his inauguration speech— was a promise to concentrate on techno- logical modernisation, while maintaining tight control over politics. Not wanting to look like an ageing dictator, Mr Putin, who is 65, posed with young activists. On cam- era, they thanked him for all the opportu-nities he is offering them. In the first decree of his new term, Mr Putin ordered his gov- ernment to improve health care and edu- cation and to raise living standards. That may be tricky, given the handicaps of eco- nomic stagnation, sanctions and endemic corruption, though rising oil prices will now help.<br>His decree copies the goals outlined in a reform programme drafted by Alexei Ku- drin, a former finance minister and a li- censed liberal in Mr Putin’s entourage. However, it does not mention the means Mr Kudrin thinks his plans would require, such as political competition and an over- haul of the judicial system to foster the rule of law. Mr Putin gave no indication that his new administration will be much different<br>The Economist May 12th 2018 from the old one on any of these counts.<br>On the contrary, he reappointed his pliable sidekick, Dmitry Medvedev, as prime min- ister. This left the Russian elite none the wiser as to whom he might be grooming as his successor if he really plans to step aside when his term ends in 2024.<br>Muddling through until then will be in- creasingly difficult. Economic rents have shrunk, thanks to stagnation, and rich Rus- sians find it harder to shelter their assets and children in the West. As a result infight- ing within the elite is likely to intensify; re- gional powerbrokers feel increasingly alienated and vulnerable. Growing politi- cal instability seems likely. Even in his shiny new bulletproof car, Mr Putin faces a bumpy ride.</p>
-<p>Warble games</p>
-<p>EUROPE is breaking up. Where once the continent was connected by a web of tight relationships, it is now fragmenting<br>into peripheral alliances. The core coun- tries are becoming more isolated; collu- sion among voting blocs is on the rise.<br>These are the conclusions of a paper, published last year by three researchers at the University of Central Florida, about the Eurovision Song Contest, the 63rd of which began in Lisbon on May 8th. The competition is as notorious for its politics as its cheesy ballads. Last year Russia withdrew after the host, Ukraine, denied entry to its contestant, who had performed in Crimea after Russia had invaded and annexed the region in 2014. Ukraine had previously won the compe- tition with a cheery song about Joseph Stalin’s deportation of Crimean Tatars during the 1940s. In 2015 Armenia’s lyrics marked 100 years since the massacre of 1.5m people, which its neighbours Turkey and Azerbaijan refuse to recognise as genocide. Turkey has boycotted the event since 2013, in protest against the automat- ic qualification to the final round enjoyed by the “Big Five”: Germany, Britain, France, Spain and Italy.<br>Yet the data show that neighbourly tensions tend to be outweighed by collu- sive voting, defined as a consistently greater exchange of points between two countries than would be expected by random allocation. The fraternising has increased sharply since 1997, when votes by the general public were introduced to supplement those cast by juries of so- called experts. The trend has been most marked among adjacent countries at the continent’s edges. In the past 20 years the Nordic bloc has won seven times; former Soviet states, six times. The “Big Five”, meanwhile, have rarely co-operated and often been shunned by everybody else. Their contestants have won only once (Lena, a German singer, triumphed in 2010 with “Satellite”). They have finished last in the final nine times, with nul points in 2003 and 2015.</p>
-<p>To Russophones with love</p>
-<p>Estonia gets creative about integrating local Russian-speakers<br>THE grey Stalinist blocks, potholed roads and intimidating communist-era plazas hardly suggest a hipster hotspot. But Narva, an Estonian town on Russia’s bor- der, is suddenly all the rage. “Within the last six months Narva has become hip in Estonia. Everyone wants to go there,” says Helen Sildna, who runs Tallinn Music Week and who is going to stage a music fes- tival in Narva for the first time in Septem- ber. The abandoned factory buildings, cheap living space and the frisson of sitting on a cultural front line between Russia and the West will attract trendsetters—or so Es- tonian officials hope. Making Narva cool is part of Estonia’s new strategy to integrate Russian-speakers in Estonia.<br>After Russia’s annexation of Crimea in 2014, Western journalists scoured maps for other places that could be next on Vladimir Putin’s hit-list. They stumbled on Narva, where almost the entire population is Rus- sian-speaking. The sight of Russian flags and border guards below the medieval for- tress on the other side of a narrow river made for suitably dramatic pictures on news bulletins. Suddenly Narva hit inter- national headlines as “the next Crimea”.<br>That was always too simplistic. Narva’s residents may have cultural, historical and linguistic ties to Moscow, but few of them want to live in Russia. Wages, pensions and living standards are higher in Estonia than on the other side of the border. Narva is not Crimea, and Estonia is not Ukraine. It is much less corrupt, and also a member of the EU and NATO. So it is far more difficult for Russia to meddle in Estonia than it was in Ukraine. And if any Russophone Esto</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/23/economist%E9%98%85%E8%AF%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-雅思作文练习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/">雅思作文练习</a>
-    </h1>
   
 
-        
-        <a href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-02-23T02:48:39.670Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="雅思作文练习"><a href="#雅思作文练习" class="headerlink" title=" 雅思作文练习 "></a><center><font color="orange"> 雅思作文练习 </font></center></h1><h3 id="2020-02-23-更新"><a href="#2020-02-23-更新" class="headerlink" title="2020-02-23 更新"></a>2020-02-23 更新</h3>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/23/%E9%9B%85%E6%80%9D%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithm-practice（1）BreadthFirstSearch" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/">algorithm-practice（1）BreadthFirstSearch</a>
-    </h1>
   
 
-        
-        <a href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/" class="archive-article-date">
-  	<time datetime="2019-12-21T14:00:32.752Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="算法练习——广度优先搜索（C-Python实现）"><a href="#算法练习——广度优先搜索（C-Python实现）" class="headerlink" title="算法练习——广度优先搜索（C++/Python实现）"></a><center>算法练习——广度优先搜索（C++/Python实现）<center></center></center></h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/21/algorithm-practice%EF%BC%881%EF%BC%89BreadthFirstSearch/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-magazine-2019-11-25" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/16/magazine-2019-11-25/">magazine-2019-11-25</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/16/magazine-2019-11-25/" class="archive-article-date">
-  	<time datetime="2019-11-16T02:41:47.145Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Memories-of-Emmett-Till"><a href="#Memories-of-Emmett-Till" class="headerlink" title="Memories of Emmett Till "></a><center>Memories of Emmett Till </center></h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/16/magazine-2019-11-25/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Qt中的拖放机制学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Qt中的拖放机制学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-11-15T13:20:01.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Drag-和-Drop-的学习笔记"><a href="#Drag-和-Drop-的学习笔记" class="headerlink" title="Drag 和 Drop 的学习笔记 "></a><center>Drag 和 Drop 的学习笔记 </center></h1><h5 id="记录对QDrag以及相关类的理解"><a href="#记录对QDrag以及相关类的理解" class="headerlink" title="记录对QDrag以及相关类的理解"></a>记录对QDrag以及相关类的理解</h5>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/15/Qt%E4%B8%AD%E7%9A%84%E6%8B%96%E6%94%BE%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -555,8 +352,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
